@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        * {
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 90%;
+        }
+
+        nav {
+            width: 80%;
+            background: bisque;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+            font: brown;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:visited {
+            color: rgb(2, 35, 252);
+        }
+
+        a:active {
+            color: rgb(255, 106, 0);
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .container {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 8px 8px 16px lightgray;
+            padding: 20px;
+        }
+
+        h1,
+        p {
+            margin: 20px;
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            margin-left: 0px;
+        }
+
+        div input {
+            margin: 10px 0px;
+        }
+
+        .gender {
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            margin: 0px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .col-button {
+            width: 50px;
+            display: flex;
+            justify-content:space-around;
+            /* margin: 10px; */
+            text-align: center;
+        }
+
+        .sub, .reset {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="work.html">Work Experience</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="box">
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <p>Enter your info.</p>
+                <label for="fname">Your Name name:</label><br>
+                <input type="text" id="youname" name="name" placeholder="Full Name" autofocus="" autocomplete="off" width="60%"><br>
+                <label for="Email">Your Email:</label><br>
+                <input type="text" id="Email" name="Email" placeholder="Email" autofocus="" autocomplete="off"><br>
+                <p class="gender"><label for="gender">Gender</label></p>
+                
+                <select name="gender" id="gender">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Others</option>
+                </select>
+
+                <p class="message"><label for="Message">Message</label></p>
+                <textarea id="Message" name="Message" rows="4"
+                    cols="50"></textarea>
+                <br><br>
+                <div class="col-button">
+                    <div class="sub">
+                    <button type="submit">Send</button>
+                </div>
+                <div class="reset">
+                    <button type="reset">Clear</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
